@@ -43,7 +43,7 @@ compile('word2vec-sentence2vec.c', 'word2vec-doc2vec')
 
 setup(
     name='word2vec',
-    version='0.7.1',
+    version='0.8.1',
     maintainer='Daniel Rodriguez',
     maintainer_email='df.rodriguez143@gmail.com',
     url='https://github.com/danielfrg/word2vec',
