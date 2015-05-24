@@ -70,6 +70,8 @@ def word2vec(train, output, size=100, window=5, sample='1e-3', hs=0,
                             stderr=subprocess.PIPE)
     if verbose:
         for line in proc.stdout:
+            if isinstance(line, bytes):
+                line = line.decode('utf-8')
             sys.stdout.write(line)
             if 'ERROR:' in line:
                 raise Exception(line)
